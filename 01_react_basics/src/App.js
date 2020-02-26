@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import MyHeader from "./Components/MyHeader";
+import MyFooter from "./Components/MyFooter.jsx";
+import MainSection from "./Components/MainSection";
+import Clicker from "./Components/Clicker";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<MyHeader></MyHeader>
+			<h1> This is React Intro Page.</h1>
+			<MainSection></MainSection>
+			<p> This is Paragraph Tag in App.js file</p>
+			<Clicker></Clicker>
+			<MyFooter></MyFooter>
+		</div>
+	);
 }
 
 export default App;
