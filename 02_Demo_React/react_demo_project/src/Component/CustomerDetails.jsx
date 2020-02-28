@@ -29,6 +29,30 @@ export default class CustomerDetails extends Component {
 	}
 
 	render() {
-		return <div></div>;
+		if (!this.state.CustomerDetails) return <p>Loading Data..</p>;
+		return (
+			<div className="customerdetails">
+				<Panel bsStyle="info" className="centeralign">
+					<Panel.Heading>
+						<Panel.Title className="h3">
+							{this.state.CustomerDetails.data.name}
+						</Panel.Title>
+					</Panel.Heading>
+					<Panel.Body>
+						<p>Name: {this.state.CustomerDetails.data.name}</p>
+						<p>Email: {this.state.CustomerDetails.data.email}</p>
+						<p>Phone: {this.state.CustomerDetails.data.phone}</p>
+						<p>City: {this.state.CustomerDetails.data.city}</p>
+						<p>State: {this.state.CustomerDetails.data.state}</p>
+						<p>Country: {this.state.CustomerDetails.data.country}</p>
+						<p>Organization: {this.state.CustomerDetails.data.organization}</p>
+						<p>Job Profile: {this.state.CustomerDetails.data.jobProfile}</p>
+						<p>
+							Additional Info: {this.state.CustomerDetails.data.additionalInfo}
+						</p>
+					</Panel.Body>
+				</Panel>
+			</div>
+		);
 	}
 }
