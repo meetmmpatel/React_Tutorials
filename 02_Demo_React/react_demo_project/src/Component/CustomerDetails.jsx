@@ -10,13 +10,13 @@ export default class CustomerDetails extends Component {
 
 	// Function will called by react once the component will load for first time.
 	componentDidMount() {
-		this.getCustomerDetails(this.props.value);
+		this.getCustomerDetails(this.props.val);
 	}
 
 	// Function with called whenever component gets updated
 	componentDidUpdate(prevPros) {
-		if (this.prevPros !== prevPros.value) {
-			this.getCustomerDetails(this.props.value);
+		if (this.props.val !== prevPros.val) {
+			this.getCustomerDetails(this.props.val);
 		}
 	}
 

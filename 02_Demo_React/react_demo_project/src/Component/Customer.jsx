@@ -30,6 +30,7 @@ export default class Customer extends Component {
 			<div>
 				<div className="col-md-3">
 					{this.state.CustomerList.data.map(customer => {
+						return (
 						<Panel bsStyle="info" key={customer.name} className="centeralign">
 							<Panel.Heading>
 								<Panel.Title componentClass="h3">{customer.name}</Panel.Title>
@@ -46,7 +47,7 @@ export default class Customer extends Component {
 									View Details
 								</Button>
 							</Panel.Body>
-						</Panel>;
+						</Panel>)
 					})}
 				</div>
 				<div className="col-md-6">
