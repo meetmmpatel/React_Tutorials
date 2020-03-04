@@ -37,17 +37,17 @@ export default class AboutCompApi extends Component {
 				<p style={{ textAlign: "left" }}>
 					React Component Functions allow us to Create Element, Transform
 					element and fragment
-					<ul>
-						<li>setState() is to update default state object</li>
-						<li>
-							forceUpdate() allow us to update component manually <br></br>
-							Component.forceUpdate(callback)
-						</li>
-						<li>
-							findDOMNode() <br></br>
-						</li>
-					</ul>
 				</p>
+				<ul>
+					<li>setState() is to update default state object</li>
+					<li>
+						forceUpdate() allow us to update component manually <br></br>
+						Component.forceUpdate(callback)
+					</li>
+					<li>
+						findDOMNode() <br></br>
+					</li>
+				</ul>
 				<div>
 					<h3>{this.state.msg}</h3>
 					<button onClick={this.updateState}>Click ot Update State</button>

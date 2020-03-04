@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import WorkFlow from "./WorkFlow";
 export default class AboutLifeCycle extends Component {
 	render() {
 		return (
@@ -21,9 +21,35 @@ export default class AboutLifeCycle extends Component {
 							</li>
 						</ul>
 					</li>
-					<li>Mounting Phase</li>
-					<li>Update Phase</li>
-					<li>Unmounting Phase</li>
+					<li>
+						Mounting Phase
+						<ol>
+							<li>Constructor(Props) and State</li>
+							<li>static getDerivedStateFromProps()</li>
+							<li>render()</li>
+							<li>componentDidMount</li>
+						</ol>
+					</li>
+					<li>
+						Update Phase
+						<ul>
+							<li>5.static getDerivedStateFromProps()</li>
+							<li>6.shouldComponentUpdate()</li>
+							<li>7.render()</li>
+							<li>8.getSnapshotBeforeUpdate()</li>
+							<li>9.componentDidUpdate()</li>
+						</ul>
+					</li>
+					<li>
+						Unmounting Phase
+						<ul>
+							<li>10.componentWillUnmount()</li>
+						</ul>
+					</li>
+					<li>
+						<h3>Component WorkFlow in Sequence</h3>
+						<WorkFlow></WorkFlow>
+					</li>
 				</ol>
 			</div>
 		);
