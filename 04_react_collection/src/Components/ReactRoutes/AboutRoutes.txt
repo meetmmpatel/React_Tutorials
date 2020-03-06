@@ -1,0 +1,8 @@
+
+React Router 
+
+1. React-router = core routing of components
+2. React-Native = it's for mobile application use
+3. React-router-dom = web application design
+
+Note: make sure you install react-router-dom library 
